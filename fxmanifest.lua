@@ -7,7 +7,9 @@ description 'Simple Watermarker  resource'
 version '1.0.0'
 
 escrow_ignore {
-	'config.lua'
+	'config.lua',
+    'html/*',
+	'img/logo.png'
 }
 
 client_scripts {
@@ -18,4 +20,10 @@ client_scripts {
 server_scripts {
     'config.lua',
     'wl_server/server.lua',
+}
+
+ui_page 'html/ui.html'
+files {
+	'html/*',
+	'img/logo.png'
 }
