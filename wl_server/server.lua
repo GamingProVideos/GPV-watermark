@@ -1,27 +1,3 @@
---onStart
-AddEventHandler('onResourceStart', function(ressourceName)
- 
-    if(GetCurrentResourceName() ~= ressourceName)then
-        return
-    end
- 
-    --Code
-    print(ressourceName.." Started")
- 
-end)
- 
---onStop
-AddEventHandler('onResourceStop', function(ressourceName)
- 
-    if(GetCurrentResourceName() ~= ressourceName)then
-        return
-    end
- 
-    --Code
-    print(ressourceName.." Stopped")
- 
-end)
-
 updatePath = "/GamingProVideos/GPV-watermark" -- your git user/repo path
 -- Console stuff
 Citizen.CreateThread(function()
@@ -42,14 +18,14 @@ Citizen.CreateThread(function()
                 print("║                       Uh Oh! Looks like GPV-watermark is outdated")
                 print("║ Should be: "..responseText..", currently is: "..curVersion..". Please update it from https://github.com"..updatePath.."")
             elseif tonumber(curVersion) > tonumber(responseText) then
-                print("║                   Hey there! Yeah you, thanks for using my car pack!")
+                print("║                   Hey there! Yeah you, thanks for using my GPV-watermark!")
                 print("║")
                 print("║")
                 print("║")
                 print("║                Uh Oh! You somehow skipped a few versions of GPV-watermark")
                 print("║  or the git went offline, if it's still online I advise you to update (or downgrade?)")
             else
-                print("║                   Hey there! Yeah you, thanks for using my car pack!")
+                print("║                   Hey there! Yeah you, thanks for using my GPV-watermark!")
                 print("║")
                 print("║")
                 print("║")

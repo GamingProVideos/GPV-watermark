@@ -9,7 +9,6 @@ version '1.0.0'
 escrow_ignore {
 	'config.lua',
     'html/*',
-	'img/logo.png'
 }
 
 client_scripts {
@@ -22,8 +21,10 @@ server_scripts {
     'wl_server/server.lua',
 }
 
-ui_page 'html/ui.html'
+
+ui_page "html/ui.html"
 files {
-	'html/*',
-	'img/logo.png'
+  'html/ui.js',
+  'html/ui.css',
+  'html/ui.html',
 }
